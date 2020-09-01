@@ -13,7 +13,7 @@ client.on('message', message => {
 
     if (message.content === 'avatar') {
         const embed = new Discord.MessageEmbed()
-            .setTitle(`${message.author.username}'s Avatar`)
+            .setTitle(`:desktop: ${message.author.username}'s Avatar`)
             .setImage(message.author.displayAvatarURL({ dynamic: true, format: "png", size: 1024 }));
         message.channel.send(embed);
     }
